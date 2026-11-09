@@ -1,0 +1,89 @@
+[
+  {
+    "id": 1,
+    "name": "BMW M5",
+
+    "brand": "BMW",
+    "year": 2024,
+    "body": "Седан",
+    "engine": "4.4 л V8",
+    "power_hp": 727,
+    "transmission": "Автомат",
+    "drive": "Полный",
+    "description": "Спортивный седан с высокой мощностью и комфортным салоном.",
+    "price": 120000,
+    "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=900"
+    
+  },
+  {
+    "id": 2,
+    "name": "Mercedes-Benz C-Class",
+    "brand": "Mercedes-Benz",
+    "year": 2023,
+    "body": "Седан",
+    "engine": "2.0 л",
+    "power_hp": 204,
+    "transmission": "Автомат",
+    "drive": "Задний",
+    "description": "Комфортный автомобиль для города и дальних поездок.",
+    "price": 55000,
+
+    "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=900"
+  },
+  {
+    "id": 3,
+    "name": "Toyota Supra",
+    "brand": "Toyota",
+    "year": 2023,
+    "body": "Купе",
+    "engine": "3.0 л",
+    "power_hp": 340,
+    "transmission": "Автомат",
+    "drive": "Задний",
+    "description": "Двухдверный спортивный автомобиль с динамичным характером.",
+    "price": 130000,
+    "image": "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=900"
+  },
+  {
+    "id": 4,
+    "name": "Audi RS6 Avant",
+    "brand": "Audi",
+    "year": 2024,
+    "body": "Универсал",
+    "engine": "4.0 л V8",
+    "power_hp": 600,
+    "transmission": "Автомат",
+    "drive": "Полный",
+    "description": "Практичный универсал с характеристиками спорткара.",
+    "price": 125000,
+    "image": "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=900"
+  },
+  {
+    "id": 5,
+    "name": "Porsche 911",
+    "brand": "Porsche",
+    "year": 2024,
+    "body": "Купе",
+    "engine": "3.0 л",
+    "power_hp": 385,
+    "transmission": "Автомат",
+    "drive": "Задний",
+    "description": "Классический спорткар с узнаваемым дизайном.",
+    "price": 42000,
+    "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=900"
+  },
+  {
+    "id": 6,
+    "name": "Tesla Model 3",
+    "brand": "Tesla",
+    "year": 2024,
+    "body": "Электроседан",
+    "engine": "Электродвигатель",
+    "power_hp": 283,
+    "transmission": "Автомат",
+    "drive": "Задний",
+    "description": "Электромобиль с минималистичным интерьером и современными технологиями.",
+    "price": 42000,
+    "image": "https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=900"
+  }
+]

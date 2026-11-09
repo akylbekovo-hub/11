@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мир автомобилей</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>МИР АВТОМОБИЛЕЙ</h1>
+    <p>Всё о машинах в одном месте</p>
+</header>
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="bmw.html">BMW</a>
+    <a href="mercedes.html">Mercedes</a>
+    <a href="toyota.html">Toyota</a>
+    <a href="audi.html">Audi</a>
+    <a href="sport.html">Спорткары</a>
+    <a href="electric.html">Электромобили</a>
+    <a href="history.html">История</a>
+    <a href="news.html">Новости</a>
+    <a href="contacts.html">Контакты</a>
+</nav>
+
+<main>
+    <h2>Добро пожаловать!</h2>
+
+    <p>
+        Этот сайт посвящён миру автомобилей.
+        Здесь вы узнаете о популярных марках,
+        спортивных машинах, электромобилях
+        и истории автомобилестроения.
+    </p>
+
+    <!-- Практика 11 — CRUD -->
+    <h2>Каталог автомобилей (CRUD)</h2>
+    <p>
+        Добавляйте, просматривайте, изменяйте
+        и удаляйте автомобили.
+    </p>
+
+    <button id="addCarBtn" type="button">
+        + Добавить автомобиль
+    </button>
+
+    <!-- Список автомобилей -->
+    <div id="carsList" class="cars-grid" aria-live="polite">
+        Загрузка автомобилей...
+    </div>
+
+    <h2>Почему люди любят автомобили?</h2>
+
+    <p>
+        Автомобили помогают людям путешествовать,
+        быстро добираться до нужных мест и
+        получать удовольствие от вождения.
+    </p>
+
+    <img
+        src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1000"
+        alt="Красивый автомобиль"
+        class="car-image"
+    >
+
+    <h2>Счётчик</h2>
+
+    <div class="counter-box">
+        <div id="counter" class="counter-number">0</div>
+
+        <div class="counter-buttons">
+            <button onclick="increase()">Увеличить +</button>
+            <button onclick="reset()">Сбросить</button>
+            <button onclick="decrease()">Уменьшить −</button>
+        </div>
+    </div>
+</main>
+
+<!-- Окно просмотра автомобиля (READ) -->
+<dialog id="carDialog" class="car-dialog"
+        aria-labelledby="carDialogTitle">
+    <button type="button"
+            id="closeCarDialog"
+            class="dialog-close"
+            aria-label="Закрыть">×</button>
+
+    <div id="carDetails"></div>
+</dialog>
+
+<!-- Окно добавления и редактирования -->
+<dialog id="carFormDialog" class="car-dialog">
+
+    <button type="button"
+            id="closeFormBtn"
+            class="dialog-close">×</button>
+
+    <h2 id="formTitle">Добавить автомобиль</h2>
+
+    <form id="carForm">
+
+        <input type="hidden" id="editCarId">
+
+        <input id="carName"
+               placeholder="Название автомобиля"
+               required>
+
+        <input id="carBrand"
+               placeholder="Марка"
+               required>
+
+        <input id="carYear"
+               type="number"
+               placeholder="Год выпуска"
+               min="1900"
+               max="2100"
+               required>
+
+        <input id="carBody"
+               placeholder="Тип кузова"
+               required>
+
+        <input id="carEngine"
+               placeholder="Двигатель"
+               required>
+
+        <input id="carPower"
+               type="number"
+               placeholder="Мощность (л.с.)"
+               min="0"
+               required>
+
+        <input id="carTransmission"
+               placeholder="Коробка передач"
+               required>
+
+        <input id="carDrive"
+               placeholder="Привод"
+               required>
+
+        <input id="carPrice"
+               type="number"
+               placeholder="Цена ($)"
+               min="0"
+               required>
+
+        <input id="carImage"
+               type="url"
+               placeholder="Ссылка на фотографию">
+
+        <textarea id="carDescription"
+                  placeholder="Описание автомобиля"
+                  rows="4"></textarea>
+
+        <button type="submit">
+            Сохранить автомобиль
+        </button>
+
+    </form>
+</dialog>
+
+<footer>
+    <p>© 2026 Мир автомобилей</p>
+    <p>Programming Languages 1 — IT-124</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="cars.js"></script>
+
+</body>
+</html>
